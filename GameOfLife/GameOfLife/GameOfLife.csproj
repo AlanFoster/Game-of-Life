@@ -1,0 +1,331 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{0CE544C8-E584-45FF-94F3-0E4B7092361B}</ProjectGuid>
+    <ProjectTypeGuids>{6D335F3A-9D43-41b4-9D22-F6F17C4BE596};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GameOfLife</RootNamespace>
+    <AssemblyName>GameOfLife</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <XnaFrameworkVersion>v4.0</XnaFrameworkVersion>
+    <XnaPlatform>Windows</XnaPlatform>
+    <XnaProfile>HiDef</XnaProfile>
+    <XnaCrossPlatformGroupID>2d6704f4-7408-45fa-a148-a3296a96ea5c</XnaCrossPlatformGroupID>
+    <XnaOutputType>Game</XnaOutputType>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <Thumbnail>
+    </Thumbnail>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\alan\Desktop\game\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>15</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\x86\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE;WINDOWS</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <PlatformTarget>x86</PlatformTarget>
+    <XnaCompressContent>false</XnaCompressContent>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\x86\Release</OutputPath>
+    <DefineConstants>TRACE;WINDOWS</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <PlatformTarget>x86</PlatformTarget>
+    <XnaCompressContent>true</XnaCompressContent>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <NoWin32Manifest>true</NoWin32Manifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Xna.Framework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Game, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Graphics, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.GamerServices, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Xact, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Video, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Avatar, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Net, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Storage, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="mscorlib">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Core">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Net">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="TomShane.Neoforce.Controls">
+      <HintPath>..\..\libs\TomShane.Neoforce.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="TomShane.Neoforce.Importers">
+      <HintPath>..\..\libs\TomShane.Neoforce.Importers.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BoilerPlate\FSM\StateFactory.cs" />
+    <Compile Include="BoilerPlate\GUI\ConfirmWindow.cs" />
+    <Compile Include="BoilerPlate\HUD\AgeCounterWidget.cs" />
+    <Compile Include="BoilerPlate\HUD\AvatarWidget.cs" />
+    <Compile Include="BoilerPlate\HUD\GraphicalWidget.cs" />
+    <Compile Include="BoilerPlate\HUD\LeaderBoard.cs" />
+    <Compile Include="BoilerPlate\HUD\HUDAlignment.cs" />
+    <Compile Include="BoilerPlate\HUD\PassportWidget.cs" />
+    <Compile Include="BoilerPlate\Misc\InputListener.cs" />
+    <Compile Include="BoilerPlate\Misc\LINQ.cs" />
+    <Compile Include="BoilerPlate\Misc\TextFieldHelper.cs" />
+    <Compile Include="BoilerPlate\ScreenManager\CustomScreenManager.cs" />
+    <Compile Include="BoilerPlate\ScreenManager\GameMouse.cs" />
+    <Compile Include="BoilerPlate\ScreenManager\GameMouseState.cs" />
+    <Compile Include="Data\CashTileData.cs" />
+    <Compile Include="Data\StoryCardData.cs" />
+    <Compile Include="GameLogic\Assets\Asset.cs" />
+    <Compile Include="GameLogic\Assets\AssetResponse.cs" />
+    <Compile Include="GameLogic\Assets\AssetType.cs" />
+    <Compile Include="GameLogic\Assets\TransportFactory.cs" />
+    <Compile Include="GameLogic\Assets\IAsset.cs" />
+    <Compile Include="BoilerPlate\GUI\Alert.cs" />
+    <Compile Include="BoilerPlate\GUI\ValidationTextField.cs" />
+    <Compile Include="GameLogic\Career.cs" />
+    <Compile Include="Data\Constants.cs" />
+    <Compile Include="BoilerPlate\FSM\FSM.cs" />
+    <Compile Include="BoilerPlate\FSM\GameState.cs" />
+    <Compile Include="BoilerPlate\GUI\GraphicalButton.cs" />
+    <Compile Include="BoilerPlate\HUD\HUDSystem.cs" />
+    <Compile Include="BoilerPlate\HUD\HUDWiget.cs" />
+    <Compile Include="BoilerPlate\HUD\TextWidget.cs" />
+    <Compile Include="BoilerPlate\HUD\TimedWidget.cs" />
+    <Compile Include="BoilerPlate\Misc\ExtendSpriteBatch.cs" />
+    <Compile Include="BoilerPlate\Misc\RandomHelper.cs" />
+    <Compile Include="Data\CareerData.cs" />
+    <Compile Include="Data\CommonNodeLogic.cs" />
+    <Compile Include="GameLogic\CareerType.cs" />
+    <Compile Include="GameLogic\GameRuleType.cs" />
+    <Compile Include="GameLogic\GameStates\Actual\ChangeWorld.cs" />
+    <Compile Include="GameLogic\GameStates\Actual\ChangeWorldLogic.cs" />
+    <Compile Include="GameLogic\GameStates\Actual\ChooseNextNode.cs" />
+    <Compile Include="GameLogic\GameStates\Actual\EndGame.cs" />
+    <Compile Include="GameLogic\GameStates\Actual\EndOfExecutionLogic.cs" />
+    <Compile Include="GameLogic\GameStates\Actual\EndOfSpinnerSpunLogic.cs" />
+    <Compile Include="GameLogic\GameStates\Actual\ExecuteNodeLogic.cs" />
+    <Compile Include="GameLogic\GameStates\Actual\FadeInWorld.cs" />
+    <Compile Include="GameLogic\GameStates\Actual\FadeOutWorld.cs" />
+    <Compile Include="GameLogic\GameStates\Actual\IncreaseAgeCounter.cs" />
+    <Compile Include="GameLogic\GameStates\Actual\LetUserChooseDirection.cs" />
+    <Compile Include="GameLogic\GameStates\Actual\VisuallyMovePlayer.cs" />
+    <Compile Include="GameLogic\GameStates\ChoosePathHelper.cs" />
+    <Compile Include="GameLogic\GameStates\Factories\IStateFactory.cs" />
+    <Compile Include="GameLogic\GameStates\Factories\RollFactory.cs" />
+    <Compile Include="GameLogic\GameStates\Factories\Factory.cs" />
+    <Compile Include="GameLogic\GameStates\GameStates.cs" />
+    <Compile Include="GameLogic\GameStates\TakeLoan.cs" />
+    <Compile Include="GameLogic\GameStates\Factories\WaitFactory.cs" />
+    <Compile Include="GameLogic\GameStates\TimedWait.cs" />
+    <Compile Include="GameLogic\Nodes\BindedLogic.cs" />
+    <Compile Include="GameLogic\PureLogics\ChoosePlayerCash.cs" />
+    <Compile Include="GameLogic\PureLogics\ModifyCash.cs" />
+    <Compile Include="GameLogic\PureLogics\Teleport.cs" />
+    <Compile Include="LevelMenu\LeaderBoard.cs" />
+    <Compile Include="LevelMenu\MenuManager.cs" />
+    <Compile Include="LevelMenu\RepayLoan.cs" />
+    <Compile Include="LevelMenu\SellHouse.cs" />
+    <Compile Include="LevelMenu\PlayerTab.cs" />
+    <Compile Include="Screens\Logo.cs" />
+    <Compile Include="Screens\Options.cs" />
+    <Compile Include="Screens\WorldEditorSetup.cs" />
+    <Compile Include="WorldEditing\EditSystems\BooleanEditSystem.cs" />
+    <Compile Include="WorldEditing\EditSystems\EnumEditSystem.cs" />
+    <Compile Include="WorldEditing\EditSystems\IEditSystem.cs" />
+    <Compile Include="WorldEditing\EditSystems\IntEditSystem.cs" />
+    <Compile Include="WorldEditing\EditSystems\MultilineStringEditSystem.cs" />
+    <Compile Include="WorldEditing\EditSystems\StringEditSystem.cs" />
+    <Compile Include="WorldEditing\NodeEditingWindow.cs" />
+    <Compile Include="WorldEditing\Tools\Help.cs" />
+    <Compile Include="WorldEditing\Tools\ObjectDragger.cs" />
+    <Compile Include="WorldEditing\ToolType.cs" />
+    <Compile Include="WorldEditing\worldvalidation\AllLinked.cs" />
+    <Compile Include="WorldEditing\worldvalidation\IValidator.cs" />
+    <Compile Include="WorldEditing\worldvalidation\ValidBindedLogic.cs" />
+    <Compile Include="WorldEditing\worldvalidation\WorldValidationResult.cs" />
+    <Compile Include="WorldObjects\CameraTarget.cs" />
+    <Compile Include="WorldObjects\GenericWorldObject.cs" />
+    <Compile Include="WorldObjects\Node.cs" />
+    <Compile Include="BoilerPlate\ScreenManager\GameLayer.cs" />
+    <Compile Include="GameLogic\Assets\Child.cs" />
+    <Compile Include="GameLogic\Assets\House.cs" />
+    <Compile Include="GameLogic\Assets\Loan.cs" />
+    <Compile Include="GameLogic\Assets\PassportStamp.cs" />
+    <Compile Include="GameLogic\Assets\Pet.cs" />
+    <Compile Include="GameLogic\Assets\Transportable.cs" />
+    <Compile Include="GameLogic\Assets\Partner.cs" />
+    <Compile Include="GameLogic\GameInfo.cs" />
+    <Compile Include="WorldObjects\StartingNode.cs" />
+    <Compile Include="GameLogic\PureLogics\AddTransportable.cs" />
+    <Compile Include="GameLogic\PureLogics\Nothing.cs" />
+    <Compile Include="GameLogic\PureLogics\StartCareer.cs" />
+    <Compile Include="GameLogic\PureLogics\StartUniversity.cs" />
+    <Compile Include="GameLogic\PureLogics\BlankStory.cs" />
+    <Compile Include="GameLogic\PureLogics\TakeExam.cs" />
+    <Compile Include="GameLogic\PureLogics\Travel.cs" />
+    <Compile Include="GameLogic\PureLogics\BuyHouse.cs" />
+    <Compile Include="GameLogic\PureLogics\GetMarried.cs" />
+    <Compile Include="GameLogic\PureLogics\GiveChild.cs" />
+    <Compile Include="GameLogic\PureLogics\GivePet.cs" />
+    <Compile Include="GameLogic\PureLogics\ModifyCashStory.cs" />
+    <Compile Include="GameLogic\PureLogics\PayDay.cs" />
+    <Compile Include="GameLogic\PureLogics\Promotion.cs" />
+    <Compile Include="GameLogic\PureLogics\PureLogic.cs" />
+    <Compile Include="GameLogic\PureLogics\SpinToWin.cs" />
+    <Compile Include="GameLogic\Storys\Story.cs" />
+    <Compile Include="GameLogic\Storys\StoryType.cs" />
+    <Compile Include="WorldObjects\Player.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Screens\Background.cs" />
+    <Compile Include="BoilerPlate\Misc\Camera2D.cs" />
+    <Compile Include="Screens\ImageSelector.cs" />
+    <Compile Include="Screens\Level.cs" />
+    <Compile Include="BoilerPlate\ScreenManager\ScreenManager.cs" />
+    <Compile Include="BoilerPlate\Misc\Persister.cs" />
+    <Compile Include="Screens\Menu.cs" />
+    <Compile Include="Screens\SetupLevel.cs" />
+    <Compile Include="TheGameOfLife.cs" />
+    <Compile Include="WorldEditing\EditableAttribute.cs" />
+    <Compile Include="BoilerPlate\ScreenManager\GameLayerManager.cs" />
+    <Compile Include="WorldEditing\Misc\NodeList.cs" />
+    <Compile Include="WorldEditing\MouseListeners\Highlight.cs" />
+    <Compile Include="WorldEditing\MouseListeners\MouseLogic.cs" />
+    <Compile Include="WorldEditing\MouseListeners\MouseLogicExtension.cs" />
+    <Compile Include="WorldEditing\ObjectEditor.cs" />
+    <Compile Include="WorldEditing\Tools\AddNode.cs" />
+    <Compile Include="WorldEditing\Tools\LinkNode.cs" />
+    <Compile Include="WorldEditing\Tools\NodeTool.cs" />
+    <Compile Include="WorldEditing\Tools\RemoveNode.cs" />
+    <Compile Include="WorldEditing\Tools\Save.cs" />
+    <Compile Include="WorldEditing\Tools\SelectObject.cs" />
+    <Compile Include="WorldEditing\Tools\Tool.cs" />
+    <Compile Include="WorldEditing\WorldEditor.cs" />
+    <Compile Include="WorldEditing\WorldLoader.cs" />
+    <Compile Include="GameLogic\Assets\Transport.cs" />
+    <Compile Include="WorldObjects\Spinner.cs" />
+    <Compile Include="WorldObjects\WorldObject.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GameOfLifeContent\GameOfLifeContent.contentproj">
+      <Project>{E67E1836-5662-4514-9F32-DA834EB78E02}</Project>
+      <Name>GameOfLifeContent %28Content%29</Name>
+      <XnaReferenceType>Content</XnaReferenceType>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Xna.Framework.4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft XNA Framework Redistributable 4.0</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Screens\World.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Data\TestWorld.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\DefaultWorld.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\XNA Game Studio\Microsoft.Xna.GameStudio.targets" />
+  <!--
+      To modify your build process, add your task inside one of the targets below and uncomment it. 
+      Other similar extension points exist, see Microsoft.Common.targets.
+      <Target Name="BeforeBuild">
+      </Target>
+      <Target Name="AfterBuild">
+      </Target>
+    -->
+</Project>
